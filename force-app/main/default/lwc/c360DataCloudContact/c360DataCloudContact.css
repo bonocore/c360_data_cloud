@@ -2,9 +2,7 @@ html {
     font-family: "Salesforce Sans";
 }
 .slds-card {
-    background: rgb(48,113,157);
-    background-image: url(https://etiennedoe-220920-477-demo.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0687Q000003ctYn&operationContext=DELIVERY&contentId=05T7Q00000IZSOp&page=0&d=/a/7Q0000004HI6/nNSz7Xc.pIy0KwjRkgxcyBFA2N6RnepPOcJzRuVoTws&oid=00D7Q00000BStBw&dpt=null&viewId=), linear-gradient(180deg, rgba(48,113,157,1) 25%, rgba(111,159,178,1) 68%, rgba(99,152,170,1) 94%);
-    color: white;
+    background: rgb(250,250,250);
     font-family: "Salesforce Sans";
     background-repeat: no-repeat;
     background-position: bottom;

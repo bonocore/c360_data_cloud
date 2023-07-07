@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="C360DataCloudContact">
+  <apiVersion>52.0</apiVersion>
+  <isExposed>true</isExposed>
+  <targets>
+    <target>lightning__RecordPage</target>
+    <target>lightningCommunity__Page</target>
+    <target>lightningCommunity__Default</target>
+  </targets>
+
+  <targetConfigs>  
+    <targetConfig targets="lightning__RecordPage">
+        <objects>
+          <object>Contact</object>
+        </objects>
+
+        <property name="bgImage" type="String" default="https://raw.githubusercontent.com/bonocore/c360_data_cloud/main/c360BGgreen.png" label="Background image"/>
+        <property name="height" type="String" default="550px" label="Component Height"/>
+        <property name="gradient" type="String" default="rgba(255, 99, 71, 1), rgba(255, 99, 71, 0.8), rgba(255, 99, 71, 0.6)" label="Component Heght"/>
+        <property name="textColor" type="String" default="white" label="Text Color"/>
+
+        <property name="AccountLabel" type="String" default="Account" label="1. Label"/>
+        <property name="AccountIcon" type="String" default="utility:company" label="1. Icon (use SLDS Icons)"/>
+
+        <property name="EmailLabel" type="String" default="Email" label="2. Label"/>
+        <property name="EmailIcon" type="String" default="utility:email" label="2. Icon (use SLDS Icons)"/>
+
+        <property name="MobileLabel" type="String" default="Mobile" label="3. Label"/>
+        <property name="MobileIcon" type="String" default="utility:phone_portrait" label="3. Icon (use SLDS Icons)"/>
+
+        <property name="CustomerSinceLabel" type="String" default="Customer Since" label="4. Label"/>
+        <property name="CustomerSinceIcon" type="String" default="utility:date_time" label="4. Icon (use SLDS Icons)"/>
+
+        <property name="TotalCustomerValueLabel" type="String" default="Total customer value" label="5. Label"/>
+        <property name="TotalCustomerValueIcon" type="String" default="utility:money" label="5. Icon (use SLDS Icons)"/>  
+
+        <property name="CsatLabel" type="String" default="CSAT" label="4.1 Label"/>
+        <property name="CsatIcon" type="String" default="utility:survey" label="4.1 Icon (use SLDS Icons)"/>        
+
+        <property name="RatingLabel" type="String" default="Rating" label="4.2 Label"/>
+        <property name="RatingIcon" type="String" default="utility:ribbon" label="Rating Icon (use SLDS Icons)"/>        
+        <property name="RatingStar" type="String" default="utility:favorite" label="Rating Star (use SLDS Icons)"/>   
+
+        <property name="ChurnLabel" type="String" default="Churn Risk" label="4.3 Label"/>
+        <property name="ChurnIcon" type="String" default="utility:warning" label="4.3 Icon (use SLDS Icons)"/>        
+
+
+                     
+
+        <property name="OptInLabel" type="String" default="Opt In" label="6. Label"/>
+        <property name="MobileOptInIcon" type="String" default="utility:phone_portrait" label="6. Icon 1(use SLDS Icons)"/>
+        <property name="EmailOptInIcon" type="String" default="utility:email" label="6. Icon 2(use SLDS Icons)"/>                        
+
+    </targetConfig>
+    <targetConfig targets="lightningCommunity__Default">
+    
+      <property name="recordId" type="String" label="Record ID" description="The value should be {!recordId}." default="{!recordId}"/>
+
+      <property name="bgImage" type="String" default="https://mpiazzi-wind-tre-demo.my.salesforce.com/resource/1681917764000/c360bg?" label="Background image"/>
+      <property name="height" type="String" default="550px" label="Component Height"/>
+      <property name="gradient" type="String" default="rgba(255, 99, 71, 1), rgba(255, 99, 71, 0.8), rgba(255, 99, 71, 0.6)" label="Component Heght"/>
+      <property name="textColor" type="String" default="white" label="Text Color"/>
+
+      <property name="AccountLabel" type="String" default="Account" label="1. Label"/>
+      <property name="AccountIcon" type="String" default="utility:company" label="1. Icon (use SLDS Icons)"/>
+
+      <property name="EmailLabel" type="String" default="Email" label="2. Label"/>
+      <property name="EmailIcon" type="String" default="utility:email" label="2. Icon (use SLDS Icons)"/>
+
+      <property name="MobileLabel" type="String" default="Mobile" label="3. Label"/>
+      <property name="MobileIcon" type="String" default="utility:phone_portrait" label="3. Icon (use SLDS Icons)"/>
+
+      <property name="CustomerSinceLabel" type="String" default="Customer Since" label="4. Label"/>
+      <property name="CustomerSinceIcon" type="String" default="utility:date_time" label="4. Icon (use SLDS Icons)"/>
+
+      <property name="TotalCustomerValueLabel" type="String" default="Total customer value" label="5. Label"/>
+      <property name="TotalCustomerValueIcon" type="String" default="utility:money" label="5. Icon (use SLDS Icons)"/>  
+
+      <property name="CsatLabel" type="String" default="CSAT" label="4.1 Label"/>
+      <property name="CsatIcon" type="String" default="utility:survey" label="4.1 Icon (use SLDS Icons)"/>        
+
+      <property name="RatingLabel" type="String" default="Rating" label="4.2 Label"/>
+      <property name="RatingIcon" type="String" default="utility:ribbon" label="Rating Icon (use SLDS Icons)"/>        
+      <property name="RatingStar" type="String" default="utility:favorite" label="Rating Star (use SLDS Icons)"/>   
+
+      <property name="ChurnLabel" type="String" default="Churn Risk" label="4.3 Label"/>
+      <property name="ChurnIcon" type="String" default="utility:warning" label="4.3 Icon (use SLDS Icons)"/>        
+
+
+                   
+
+      <property name="OptInLabel" type="String" default="Opt In" label="6. Label"/>
+      <property name="MobileOptInIcon" type="String" default="utility:phone_portrait" label="6. Icon 1(use SLDS Icons)"/>
+      <property name="EmailOptInIcon" type="String" default="utility:email" label="6. Icon 2(use SLDS Icons)"/>                        
+
+  </targetConfig>
+   
+</targetConfigs>
+
+
+</LightningComponentBundle>

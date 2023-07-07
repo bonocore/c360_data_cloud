@@ -23,15 +23,30 @@ public with sharing class GB_c360DataCloud_Controller {
 
 
         return [
-            select Id, Name from Account where ID = :accountId
+            select Id, Name, PersonEmail, BillingCity, BillingState, BillingCountry  from Account where ID = :accountId
         ];
 
 
-        public class wrapperino{
-            public string name;
-            public string accountId;
 
-        }
+    }
+
+    @AuraEnabled(cacheable=true scope='global')
+    public static Contact getContact(String contactId) {
+        System.debug('Get Person Contact for id '+contactId);
+         
+        contactId = contactId.trim();
+         if (contactId == '') {
+             return null;
+         }
+        
+      
+         Contact toRet = Database.query('select Id, Name, SDO_Cust360_Contact_Picture_URL__c, MailingCity, MailingStreet, AccountId,  Account.Name, Email, MobilePhone, SDO_Cust360_CSAT__c, CreatedDate, et4ae5__HasOptedOutOfMobile__c, HasOptedOutOfEmail, Title, Total_Customer_Value__c, Rating__c, SDO_Cust360_ChurnRisk__c from Contact where ID = :contactId');
+
+         System.debug('To Ret '+toRet);
+        return toRet;
+
+
+
     }
  
 }
